@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="Squawck maskable app icon">
+  
+  <rect width="1024" height="1024" fill="#F0E1D2"></rect>
+  <g transform="translate(52.15,108.52) scale(2.9668)">
+    <path d="M104 116 L54 128 L80 145 L54 164 L104 154 Z" fill="#C8623E"></path>
+    <path d="M150 52 C186 52 198 86 193 120 C189 156 166 178 135 178 C119 178 108 170 103 151 C100 138 100 122 100 108 C100 78 118 52 150 52 Z" fill="#C8623E"></path>
+    <path d="M188 88 L214 92 L194 100 Z" fill="#DE8460"></path>
+    <path d="M194 106 L214 112 L188 114 Z" fill="#DE8460"></path>
+    <circle cx="164" cy="90" r="6" fill="#F0E1D2"></circle>
+    <g stroke="#DE8460" stroke-width="3.6" stroke-linecap="round" fill="none">
+      <path d="M226 93 L253.6 77.4"></path>
+      <path d="M226 103 L257.2 103"></path>
+      <path d="M226 113 L253.6 128.6"></path>
+    </g>
+    <path d="M124 176 L124 206 M118 210 L134 210" stroke="#DE8460" stroke-width="7" stroke-linecap="round" fill="none"></path>
+    <path d="M144 176 L144 206 M138 210 L154 210" stroke="#DE8460" stroke-width="7" stroke-linecap="round" fill="none"></path>
+  </g>
+</svg>

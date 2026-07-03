@@ -5,10 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Squawck — the group chat that could've been a text</title>
 <meta name="description" content="Squawck sends one message as private 1:1 texts to everyone you pick. Never a group thread. Never an app for them to install. Nothing ever leaves your phone.">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/web/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/web/favicon-48.png">
+<link rel="icon" href="assets/svg/squawck-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/web/apple-touch-icon-180.png">
+<link rel="manifest" href="assets/web/site.webmanifest">
+<meta name="theme-color" content="#C8623E">
+
+<meta property="og:title" content="Squawck">
+<meta property="og:description" content="The group chat that could've been a text. One message, sent as private texts — replies come only to you.">
+<meta property="og:image" content="https://squawck.com/assets/web/icon-1024.png">
+<meta property="og:url" content="https://squawck.com/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
   :root {
-    --terracotta: #D16342;
-    --terracotta-light: #E67D58;
+    --body: #C8623E;
+    --accent: #DE8460;
+    --wordmark: #B5532F;
     --clay: #F4E5DB;
     --ink: #3D2A22;
   }
@@ -16,65 +36,67 @@
   body {
     background: var(--clay);
     color: var(--ink);
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Fredoka', Georgia, sans-serif;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 24px;
+    padding: 32px 24px;
   }
-  main { max-width: 560px; }
+  main { max-width: 580px; }
   .mark {
-    font-size: 64px;
-    letter-spacing: 2px;
-    line-height: 1;
-    margin-bottom: 8px;
-    /* The bird emoji renders facing left on most platforms; mirror it so it
-       faces right (toward the words it's about to squawck). */
-    transform: scaleX(-1);
+    width: 180px;
+    height: auto;
+    margin-bottom: 10px;
   }
   h1 {
-    font-size: 44px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: var(--terracotta);
-    margin-bottom: 14px;
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: var(--wordmark);
+    margin-bottom: 12px;
   }
   .tagline {
-    font-size: 20px;
-    font-style: italic;
-    margin-bottom: 28px;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 26px;
   }
   .pitch {
     font-size: 17px;
+    font-weight: 400;
     line-height: 1.6;
     margin-bottom: 10px;
   }
   .promises {
-    margin: 26px 0;
-    font-size: 15px;
+    margin: 24px 0;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 2;
-    color: var(--terracotta);
-    font-weight: 600;
+    color: var(--wordmark);
   }
   .soon {
     display: inline-block;
-    background: var(--terracotta);
+    background: var(--body);
     color: var(--clay);
-    padding: 12px 28px;
-    border-radius: 14px;
+    padding: 13px 30px;
+    border-radius: 999px;
     font-size: 16px;
+    font-weight: 500;
     letter-spacing: 1px;
     margin-bottom: 26px;
   }
-  a { color: var(--terracotta); }
-  footer { font-size: 13px; opacity: 0.7; margin-top: 18px; }
+  a { color: var(--wordmark); }
+  footer { font-size: 13px; opacity: 0.7; margin-top: 16px; font-weight: 400; }
+  @media (max-width: 420px) {
+    h1 { font-size: 42px; letter-spacing: 3px; }
+    .mark { width: 140px; }
+  }
 </style>
 </head>
 <body>
 <main>
-  <div class="mark">🐦</div>
+  <img class="mark" src="assets/svg/squawck-mark.svg" alt="The Squawck bird, mid-squawck">
   <h1>SQUAWCK</h1>
   <p class="tagline">The group chat that could&rsquo;ve been a text.</p>
   <p class="pitch">Write one message. Everyone you pick gets it as a normal, private text
