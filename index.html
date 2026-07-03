@@ -30,6 +30,9 @@
     letter-spacing: 2px;
     line-height: 1;
     margin-bottom: 8px;
+    /* The bird emoji renders facing left on most platforms; mirror it so it
+       faces right (toward the words it's about to squawck). */
+    transform: scaleX(-1);
   }
   h1 {
     font-size: 44px;
